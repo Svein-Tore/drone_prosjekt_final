@@ -3,7 +3,7 @@
     "description": "",
     "dependencies": {
         "core": "*",
-        "BlockyTalky-BLE": "github:laboratoryforplayfulcomputation/pxt-blockytalkyble#v0.0.14",
+        "BlockyTalky-BLE": "github:laboratoryforplayfulcomputation/pxt-blockytalkyble#v0.0.21",
         "microphone": "*"
     },
     "files": [

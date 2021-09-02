@@ -14,7 +14,6 @@ SerialPin.P2,
 BaudRate.BaudRate115200
 )
 basic.forever(function () {
-    let batteryMilliVolt = 0
     basic.clearScreen()
     tekst_til_kk2 = "P" + motatte_tegn
     throttle = AirBit.getNumber("T", tekst_til_kk2)
@@ -24,7 +23,7 @@ basic.forever(function () {
     led.plot(Math.map(roll, -90, 90, 0, 5), Math.map(pitch, -90, 90, 5, 0))
     led.plot(0, Math.map(throttle, 0, 100, 4, 0))
     led.plot(Math.map(yaw, -45, 45, 0, 4), 0)
-    AirBit.plotYLine(4, Math.map(batteryMilliVolt, 3400, 4200, 4, 0), 4)
+    led.plot(4, 4)
     AirBit.FlightControl(
     throttle,
     yaw,

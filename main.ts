@@ -22,7 +22,7 @@ basic.forever(function () {
     roll = AirBit.getNumber("R", tekst_til_kk2)
     led.plot(Math.map(roll, -90, 90, 0, 5), Math.map(pitch, -90, 90, 5, 0))
     led.plot(0, Math.map(throttle, 0, 100, 4, 0))
-    led.plot(Math.map(yaw, -45, 45, 0, 4), 0)
+    led.plot(2, 0)
     led.plot(4, 4)
     AirBit.FlightControl(
     throttle,
